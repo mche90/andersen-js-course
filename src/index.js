@@ -40,7 +40,10 @@ import {
     task6Old,
     task6New
 } from './es-features/task6';
-// import { task7Old, task7New } from './es-features/task7';
+import {
+    task7Old,
+    task7New
+} from './es-features/task7';
 // import { task8Old, task8New } from './es-features/task8';
 // import { task9Old, task9New } from './es-features/task9';
 // import { task10Old, task10New } from './es-features/task10';
@@ -81,8 +84,8 @@ console.log('task6 new', task6New()); // ['Max', 100, 'Admin', false, '1']
 
 // console.log('=============');
 
-// console.log('task7 old', task7Old()); // {test: 0, foo: 1, bar: 2}
-// console.log('task7 new', task7New()); // {test: 0, foo: 1, bar: 2}
+console.log('task7 old', task7Old()); // {test: 0, foo: 1, bar: 2}
+console.log('task7 new', task7New()); // {test: 0, foo: 1, bar: 2}
 
 // console.log('=============');
 
