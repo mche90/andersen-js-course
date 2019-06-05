@@ -16,11 +16,26 @@
  * Для задач на array-practice импортируйте написанные функции сюда и проверяйте их работу тут.
  */
 
-import { task1Old, task1New } from './es-features/task1';
-import { task2Old, task2New } from './es-features/task2';
-import { task3Old, task3New } from './es-features/task3';
-import { task4Old, task4New } from './es-features/task4';
-// import { task5Old, task5New } from './es-features/task5';
+import {
+    task1Old,
+    task1New
+} from './es-features/task1';
+import {
+    task2Old,
+    task2New
+} from './es-features/task2';
+import {
+    task3Old,
+    task3New
+} from './es-features/task3';
+import {
+    task4Old,
+    task4New
+} from './es-features/task4';
+import {
+    task5Old,
+    task5New
+} from './es-features/task5';
 // import { task6Old, task6New } from './es-features/task6';
 // import { task7Old, task7New } from './es-features/task7';
 // import { task8Old, task8New } from './es-features/task8';
