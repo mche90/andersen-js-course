@@ -36,7 +36,10 @@ import {
     task5Old,
     task5New
 } from './es-features/task5';
-// import { task6Old, task6New } from './es-features/task6';
+import {
+    task6Old,
+    task6New
+} from './es-features/task6';
 // import { task7Old, task7New } from './es-features/task7';
 // import { task8Old, task8New } from './es-features/task8';
 // import { task9Old, task9New } from './es-features/task9';
@@ -62,13 +65,19 @@ console.log('task4 new', task4New()); // {x: 10, y: 10, bar: function, baztest: 
 
 // console.log('=============');
 
-// console.log('task5 old', task5Old(['test', 42], { name: 'foo', val: 7 })); // ['test', 42, 'foo', 7]
-// console.log('task5 new', task5New(['test', 42], { name: 'foo', val: 7 })); // ['test', 42, 'foo', 7]
+console.log('task5 old', task5Old(['test', 42], {
+    name: 'foo',
+    val: 7
+})); // ['test', 42, 'foo', 7]
+console.log('task5 new', task5New(['test', 42], {
+    name: 'foo',
+    val: 7
+})); // ['test', 42, 'foo', 7]
 
 // console.log('=============');
 
-// console.log('task6 old', task6Old()); // ['Max', 100, 'Admin', false, '1']
-// console.log('task6 new', task6New()); // ['Max', 100, 'Admin', false, '1']
+console.log('task6 old', task6Old()); // ['Max', 100, 'Admin', false, '1']
+console.log('task6 new', task6New()); // ['Max', 100, 'Admin', false, '1']
 
 // console.log('=============');
 
