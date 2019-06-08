@@ -30,6 +30,10 @@ import {
 } from './array-practice/task3'
 
 import {
+    union
+} from './array-practice/task4'
+
+import {
     task1Old,
     task1New
 } from './es-features/task1';
@@ -140,4 +144,10 @@ console.log('task2', arrayDiff([1, 3, 3, 4], [1, 3, '4']));
 
 // console.log('================')
 
-console.log('task', forEachRight([1, 2, 3, 4]));
+console.log('task3', forEachRight([1, 2, 3, 4]));
+
+
+// console.log('================')
+
+console.log('task4', union([5, 1, 2, 3, 3], [4, 3, 2]));
+console.log('task4', union([5, 1, 3, 3, 4], [1, 3, 4]));
