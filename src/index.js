@@ -20,6 +20,11 @@
 import {
     any
 } from './array-practice/task1'
+
+import {
+    arrayDiff
+} from './array-practice/task2'
+
 import {
     task1Old,
     task1New
@@ -123,3 +128,12 @@ console.log('task1',
     any([0, 0, 1, 0], value => Boolean(value)));
 console.log('task1',
     any([0, 0, 0, 0], value => Boolean(value)));
+
+// console.log('================')
+
+console.log('task2', arrayDiff([1, 2, 3], [1, 2, 4]));
+console.log('task2', arrayDiff([1, 3, 3, 4], [1, 3, '4']));
+
+// console.log('================')
+
+forEachRight([1, 2, 3, 4], val => console.log(val));
