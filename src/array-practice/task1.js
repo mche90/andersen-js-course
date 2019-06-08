@@ -14,3 +14,8 @@
  * console.log(any([0, 0, 1, 0])); -> true
  * console.log(any([0, 0, 0, 0])); -> false
  */
+export function task1() {
+    console.log([0, 1, 2, 0].some(index => index > 0));
+    console.log([0, 0, 1, 0].some(index => index > 0));
+    console.log([0, 0, 0, 0].some(index => index > 0));
+}

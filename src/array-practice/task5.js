@@ -13,3 +13,26 @@
  * generator.next(); -> 'Complete!'
  * generator.next(); -> 'Complete!'
  */
+function* createGenerator() {
+    const index = [1, '6', 3, 2, 'string'];
+
+    for (let i = 0; i < index.length; i++) {
+
+        yield index[i]++;
+
+
+    }
+
+    /*for (let i = 0; i > index.length - 1; i++) {
+        yield 'Complete!'
+    }*/
+
+}
+
+
+const generator = createGenerator();
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value);

@@ -16,6 +16,10 @@
  * Для задач на array-practice импортируйте написанные функции сюда и проверяйте их работу тут.
  */
 
+
+import {
+    task1
+} from './array-practice/task1'
 import {
     task1Old,
     task1New
@@ -52,7 +56,10 @@ import {
     task9Old,
     task9New
 } from './es-features/task9';
-// import { task10Old, task10New } from './es-features/task10';
+import {
+    task10Old,
+    task10New
+} from './es-features/task10';
 
 console.log('task1 old', task1Old(10) === 500); // true
 console.log('task1 new', task1New(10) === 500); // true
@@ -105,7 +112,7 @@ console.log('task9 new', task9New()); // [true, 1]
 
 // console.log('=============');
 
-// console.log('task10 old', task10Old()); // {name: 'Max', age: 12, color: red}
-// console.log('task10 new', task10New()); // {name: 'Max', age: 12, color: red}
+console.log('task10 old', task10Old()); // {name: 'Max', age: 12, color: red}
+console.log('task10 new', task10New()); // {name: 'Max', age: 12, color: red}
 
 // console.log('=============');

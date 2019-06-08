@@ -15,3 +15,13 @@
  * console.log(arrayDiff([1, 2, 3], [1, 2, 4])); -> [3, 4]
  * console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4'])); -> [4, '4']
  */
+
+function arrayDiff(a, b) {
+    return [
+        ...a.filter(x => b.indexOf(x) === -1),
+        ...b.filter(x => a.indexOf(x) === -1)
+    ];
+}
+
+console.log(arrayDiff([1, 2, 3], [1, 2, 4]));
+console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4']));
