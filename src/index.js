@@ -18,7 +18,7 @@
 
 
 import {
-    task1
+    any
 } from './array-practice/task1'
 import {
     task1Old,
@@ -60,6 +60,7 @@ import {
     task10Old,
     task10New
 } from './es-features/task10';
+
 
 console.log('task1 old', task1Old(10) === 500); // true
 console.log('task1 new', task1New(10) === 500); // true
@@ -116,3 +117,9 @@ console.log('task10 old', task10Old()); // {name: 'Max', age: 12, color: red}
 console.log('task10 new', task10New()); // {name: 'Max', age: 12, color: red}
 
 // console.log('=============');
+console.log('task1',
+    any([0, 1, 2, 0], x => x >= 2));
+console.log('task1',
+    any([0, 0, 1, 0], value => Boolean(value)));
+console.log('task1',
+    any([0, 0, 0, 0], value => Boolean(value)));
