@@ -11,7 +11,7 @@
 // Раскомментировать нижнее, при начале реализации
 
 
-
+/*
 function membersOnActiveMeetups(meetups) {
     meetups = [{
             name: 'JavaScript',
@@ -33,15 +33,15 @@ function membersOnActiveMeetups(meetups) {
             isActive: true,
             members: 500
         },
-    ];
+    ];*/
 
-    function reducer(accumulator, currentValue) {
-        let result = 0;
-        if (isNumber(currentValue) && (meetups.isActive = true)) {
-            result = currentValue + result;
-        }
-
+function reducer(accumulator, currentValue) {
+    let result = 0;
+    if (isNumber(currentValue) && (meetups.isActive = true)) {
+        result = currentValue + result;
     }
-    console.log(meetsup.reduce(reducer));
+
+}
+console.log(meetsup.reduce(reducer));
 }
 membersOnActiveMeetups();

@@ -41,6 +41,24 @@ import {
 } from './array-practice/task6'
 
 import {
+    take
+} from './array-practice/task7'
+
+import {
+    without
+} from './array-practice/task8'
+
+import {
+    indexOfAll
+} from './array-practice/task9'
+
+
+
+
+
+//////////////////////////////////////////////////////
+
+import {
     task1Old,
     task1New
 } from './es-features/task1';
@@ -176,3 +194,20 @@ console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc + i
 console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc * item));
 console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc * item, 1));
 console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc - item));
+
+// console.log('================')
+
+console.log('task7', take([1, 2, 3], 5));
+console.log('task7', take([1, 2, 3], 2));
+
+
+// console.log('================')
+
+console.log('task8', without([2, 1, 2, 3], 1, 2))
+console.log('task8', without([2, 1, 10, 20], 1, 2))
+
+//console.log ('=========================')
+console.log(indexOfAll([1, 2, 3, 1, 2, 3], 1));
+console.log('task9', indexOfAll([1, 2, 3, 1, 2, 3], 4));
+
+//console.log ('=========================')

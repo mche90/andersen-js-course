@@ -11,3 +11,11 @@
  * console.log(without([2, 1, 2, 3], 1, 2)) -> [3]
  * console.log(without([2, 1, 10, 20], 1, 2)) -> [10, 20]
  */
+
+export function without(array, ...values) {
+
+    return [
+        ...array.filter(x => values.indexOf(x) === -1),
+        ...values.filter(x => array.indexOf(x) === -1)
+    ];
+}

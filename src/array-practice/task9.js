@@ -10,6 +10,12 @@
  * console.log(indexOfAll([1, 2, 3, 1, 2, 3], 1)); -> [0, 3]
  * console.log(indexOfAll([1, 2, 3], 4)); -> []
  */
-function indexOfAll(array, value) {
-    const Err = [5, 4, 8, 7]
+export function indexOfAll(array, value) {
+    let newarray = [];
+    let idx = array.indexOf(value);
+    while (idx !== -1) {
+        newarray.push(idx);
+        idx = array.indexOf(value, idx + 1);
+    }
+    return newarray
 }
