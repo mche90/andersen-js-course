@@ -36,6 +36,9 @@ import {
 import {
     createGenerator
 } from './array-practice/task5'
+import {
+    transformArrayToNumber
+} from './array-practice/task6'
 
 import {
     task1Old,
@@ -165,3 +168,11 @@ console.log('task5', generator.next());
 console.log('task5', generator.next());
 console.log('task5', generator.next());
 console.log('task5', generator.next());
+
+// console.log('================')
+
+console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc + item));
+console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc + item, 10));
+console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc * item));
+console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc * item, 1));
+console.log('task6', transformArrayToNumber([10, 20, 30], (acc, item) => acc - item));
