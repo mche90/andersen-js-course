@@ -13,26 +13,15 @@
  * generator.next(); -> 'Complete!'
  * generator.next(); -> 'Complete!'
  */
-function* createGenerator() {
-    const index = [1, '6', 3, 2, 'string'];
-
-    for (let i = 0; i < index.length; i++) {
-
-        yield index[i]++;
-
-
+export function createGenerator(array) {
+    let result = 0;
+    return {
+        next: function () {
+            result++;
+            if (result > array.length) {
+                return "Complete!"
+            } else return array[result - 1];
+        }
     }
 
-    /*for (let i = 0; i > index.length - 1; i++) {
-        yield 'Complete!'
-    }*/
-
 }
-
-
-const generator = createGenerator();
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
