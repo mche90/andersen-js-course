@@ -26,6 +26,10 @@ import {
 } from './array-practice/task2'
 
 import {
+    forEachRight
+} from './array-practice/task3'
+
+import {
     task1Old,
     task1New
 } from './es-features/task1';
@@ -136,4 +140,4 @@ console.log('task2', arrayDiff([1, 3, 3, 4], [1, 3, '4']));
 
 // console.log('================')
 
-forEachRight([1, 2, 3, 4], val => console.log(val));
+console.log('task', forEachRight([1, 2, 3, 4]));
