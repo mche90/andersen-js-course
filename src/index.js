@@ -53,7 +53,9 @@ import {
 } from './array-practice/task9'
 
 
-
+import {
+    membersOnActiveMeetups
+} from './array-practice/task10'
 
 
 //////////////////////////////////////////////////////
@@ -210,4 +212,7 @@ console.log('task8', without([2, 1, 10, 20], 1, 2))
 console.log(indexOfAll([1, 2, 3, 1, 2, 3], 1));
 console.log('task9', indexOfAll([1, 2, 3, 1, 2, 3], 4));
 
+
 //console.log ('=========================')
+
+//console.log(membersOnActiveMeetups(meetups))
